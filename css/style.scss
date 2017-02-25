@@ -14,9 +14,12 @@ body{
   background-color: $baseColor;
 }
 
-
-p.resizeimage img { 
-    width: 100%;
+.resizeimage {
+  background-image: url("../images/neko.jpg");
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
 }
 
 
@@ -120,6 +123,10 @@ footer {
 
 // desktop
 @media (min-width: 769px) {
+
+.resizeimage {
+  height: 500px;
+}
 
   // Skills
   #skills {

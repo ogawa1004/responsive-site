@@ -3,8 +3,12 @@ body {
   color: #4c4c4c;
   background-color: #FFFFFB; }
 
-p.resizeimage img {
-  width: 100%; }
+.resizeimage {
+  background-image: url("../images/neko.jpg");
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
 
 /* Align
 ------------------------------------------------------------*/
@@ -89,6 +93,9 @@ footer {
   margin-top: 60px; }
 
 @media (min-width: 769px) {
+  .resizeimage {
+    height: 500px; }
+
   #skills .container {
     -webkit-flex-direction: row;
     flex-direction: row;
